@@ -20,6 +20,10 @@ class Job {
                         ");
         // Assign result set
         $results = $this->db->resultSet();
+
+        // print_r($results);
+
+        return $results;
     }
 }
 
