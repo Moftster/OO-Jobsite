@@ -9,13 +9,15 @@
 
 <div class="jumbotron">
   <h1>Find a job</h1>
-  <form action="">
+  <form method="GET" action="index.php">
     <select name="category" class="form-control">
       <option value="0">Choose category</option>
       <?php foreach($categories as $category): ?>
         <option value="<?= $category->id; ?>"><?= $category->name; ?></option>
       <?php endforeach; ?>
     </select>
+    <br>
+     <input type="submit" class="btn btn-success" value="Find">
   </form>
 </div>
 
