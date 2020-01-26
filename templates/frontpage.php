@@ -21,6 +21,8 @@
   </form>
 </div>
 
+<h3><?= $title; ?></h3>
+
 <?php foreach($jobs as $job): ?> 
 
 <div class="row marketing">
