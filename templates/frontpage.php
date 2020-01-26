@@ -8,9 +8,15 @@
 ?>
 
 <div class="jumbotron">
-  <h1>Jumbotron heading</h1>
-  <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-  <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+  <h1>Find a job</h1>
+  <form action="">
+    <select name="category" class="form-control">
+      <option value="0">Choose category</option>
+      <?php foreach($categories as $category): ?>
+        <option value="<?= $category->id; ?>"><?= $category->name; ?></option>
+      <?php endforeach; ?>
+    </select>
+  </form>
 </div>
 
 <?php foreach($jobs as $job): ?> 
