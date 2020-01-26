@@ -1,4 +1,13 @@
-<?php include '../inc/header.php'; ?>
+<?php include '../inc/header.php'; 
+
+echo SITE_TITLE;
+
+echo DB_HOST;
+
+
+?>
+
+
 
 <div class="jumbotron">
   <h1>Jumbotron heading</h1>
