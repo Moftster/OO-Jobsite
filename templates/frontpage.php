@@ -31,7 +31,7 @@
     <p><?php echo $job->description; ?></p>
   </div>
   <div class="col-md-2">
-      <a href="" class="btn btn-danger">View</a>
+      <a href="job.php?id=<?= $job->id; ?>" class="btn btn-danger">View</a>
   </div>
 </div>
 
