@@ -25,3 +25,5 @@
   </nav>
   <h3 class="text-muted">Job lister</h3>
 </div>
+
+<?php displayMessage(); ?>
